@@ -1,0 +1,132 @@
+/* Product Infomation */
+
+.productInfo {
+    padding: 40px 0;
+}
+
+.productInfo .breadcrumb__link {
+    font-size: 1.6rem;
+}
+
+.productInfo .pl {
+    padding-left: 20px;
+}
+
+.productInfo__name {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.productInfo__name::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    height: 1px;
+    width: 130px;
+    background-color: var(--default-cl);
+}
+
+.productInfo__name::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    height: 1px;
+    width: 60px;
+    background-color: var(--default-cl);
+}
+
+.productInfo__price {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    color: var(--default-cl);
+    margin-top: 30px;
+}
+
+.priceInfo__unit {
+    color: var(--default-cl);
+    font-size: 2rem;
+    text-decoration: underline;
+    position: relative;
+    top: -4px;
+}
+
+.productInfo__description {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 12px;
+}
+
+.productInfo__description span {
+    font-weight: 500;
+}
+
+.productInfo__addToCart {
+    margin-top: 30px;
+}
+
+.productInfo__addToCart .buttons_added {
+    margin-right: 30px;
+}
+
+.productIndfo__policy {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.policy {
+    height: 80px;
+    flex: 1;
+    padding: 4px;
+}
+
+.productIndfo__policy-img {
+    height: 40px;
+}
+
+.productIndfo__policy-title {
+    font-size: 1.3rem;
+    color: var(--white-cl-1);
+    margin-bottom: 4px;
+}
+
+.productIndfo__policy-description {
+    font-size: 1.2rem;
+    color: var(--white-cl-2);
+}
+
+.productIndfo__category {
+    margin-top: 20px;
+    border-top: 1px dotted rgba(0, 0, 0, 0.5);
+    line-height: 2rem;
+    padding-top: 8px;
+}
+
+.productIndfo__category-text {
+    font-size: 1.6rem;
+    color: var(--black-cl-2);
+    line-height: 2.6rem;
+}
+
+.productIndfo__category-link {
+    font-size: 1.6rem;
+    color: var(--black-cl-2);
+    font-weight: 400;
+}
+
+.productIndfo__category-link:hover {
+    color: var(--default-cl);
+    transition: all 0.3s;
+}
+
+.productDetail {
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

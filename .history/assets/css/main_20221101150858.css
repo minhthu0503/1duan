@@ -1,0 +1,45 @@
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    width: 100px;
+}
+
+.header_search{ 
+    margin: 0 50px;
+    flex: 1;
+}
+
+.header_form{
+    width: 100%;
+}
+
+.header_form-input{
+    width: 70%;
+}
+
+.btn.header_form-btn{   
+}
+
+.header_right{
+    display: flex;
+}
+
+.header_login-logout{
+
+}
+
+.header_login{
+
+}
+
+.header_logout{
+
+}
+
+.header_cart{
+
+}

@@ -1,0 +1,122 @@
+.products_detail{
+    margin-top: 50px;
+}
+.header_product-title {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.header_product {
+    display: flex;
+    padding: 15px 0;
+    /* width: 30%; */
+}
+
+.title1,
+.header_product span {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+.sticky_product_title {
+    top: calc(var(--header-navbar-wap) + var(--header-menu-list) + 10px);
+    position: sticky;
+    /* top: 0; */
+    right: 0%;
+    left: 0%;
+    z-index: 10;
+    background-color: var(--white-color);
+}
+
+.silder_img-products {
+    display: flex;
+}
+
+.slider_products-thumb {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider_products-list {
+    list-style: none;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.slider_products-list.active {
+    border: 1px solid var(--primary-color);
+}
+
+.slider_products-link {
+
+}
+
+.slider_products-img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox {
+    /* float: left; */
+    flex: 1;
+    width: 100%;
+    /* height: 100%; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    overflow: hidden;
+}
+
+.slider_products-main {
+    width: 100%;
+    height: 100%;
+}
+
+/* products_detail-content */
+
+.products_detail-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.products_detail-header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}   
+
+.products_detail-heading{
+    font-family: 'Trirong', serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    line-height: 1.42em;
+    letter-spacing: -0.5pt;
+    color: #333;
+    font-weight: 400;
+}
+
+.products_detail-heading-category{
+
+}
+
+.products_detail-heading-link{
+
+}
+
+.products_detail-price{
+
+}
+
+.products_detail-title{
+
+}
+
+.products_detail-form{
+
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Beauties</title>
+    <link rel="icon" href="./assets/img/icon_logo.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css">
+
+<body>
+    <div class="app">
+        <div class="fixed">
+            <div class="header">
+                <!-- LOGO -->
+                <a href="index.html" class="header_logo-link">
+                    <img class="header_logo" src="./assets/img/logo.png" alt="">
+                </a>
+                <div class="header_search">
+                    <form action="#" class="header_form">
+                        <input type="text" class="header_form-input">
+                        <button class="header_form-btn btn btn--primary">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="header_right">
+                    <div class="header_login-logout">
+                        <a href="#" class="header_login">Đăng nhập</a>
+                        <a href="#" class="header_logout">Đăng ký</a>
+                    </div>
+                    <div class="header_cart">
+                        <div class="header__card-wrap">
+                            <i class="fa fa-basket-shopping"></i>
+                            <span class="header_cart-quantity">
+                                3
+                            </span>
+                            <!-- not products -->
+                            <!-- <div class="header__card-list header__card-list-no-card">              
+                                        <img class="header__card-list-no-card-img"  src="./assets/img/cart-empty.png" alt="">
+                                        <span class="header__card-list-no-card-msg">Chưa có sản phẩm</span>
+                                    </div> -->
+                            <!-- have products -->
+                            <div class="header__card-list">
+                                <h4 class="header__card-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__card-list-item">
+                                    <li class="header__card-item">
+                                        <img src="./assets/img/sp_demo.jpg" alt="" class="header__card-img">
+                                        <div class="header__card-item-info">
+                                            <div class="header__card-item-head">
+                                                <h5 class="header__card-item-name">Sửa rửa mặt CETAPHIL Moisturizing
+                                                    Lotion 20 fl oz</h5>
+                                                <div class="header__card-item-price-wrap">
+                                                    <span class="header__card-item-price">200.000đ</span>
+                                                    <span class="header__card-item-x">x</span>
+                                                    <span class="header__card-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="header__card-btn">
+                                    <a href="#" class="btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_menu">
+                <div class="row">
+                    <div class="col l-8 l-o-2 c-8 c-o-2 m-8 m-o-2">
+                        <ul class="header_menu-list">
+                            <li class="header_menu-item">
+                                <a href="" class="header_menu-link">Trang Chủ</a>
+                            </li>
+                            <li class="header_menu-item">
+                                <a href="" class="header_menu-link">Giới Thiệu</a>
+                            </li>
+                            <li class="header_menu-item">
+                                <a href="" class="header_menu-link">Sản Phẩm</a>
+                            </li>
+                            <li class="header_menu-item">
+                                <a href="" class="header_menu-link">Tin Tức</a>
+                            </li>
+                            <li class="header_menu-item">
+                                <a href="" class="header_menu-link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="slider">
+                <button class="slider_btn slider_btn-prev" id="prev"><</button>
+                <button class="slider_btn slider_btn-next" id="next">></button>
+            
+                <div class="slider_show">
+                    <div class="slider_show-item active">
+                        <img class="slider_show-img" src="./assets/img/slider/1.png" alt="">
+                    </div>
+                    <div class="slider_show-item">
+                        <img class="slider_show-img" src="./assets/img/slider/2.jpg" alt="">
+                    </div>
+                    <div class="slider_show-item">
+                        <img class="slider_show-img" src="./assets/img/slider/3.jpg" alt="">
+                    </div>
+                </div>
+                <p id="title">Ảnh
+                    <span id="number">1</span> /
+                    <span id="demo">10</span>
+                </p>
+            </div>
+        </div>
+       <script>
+        var slideItem = document.querySelector('.slider_show').children;
+var slideLength = slideItem.length;
+var next = document.querySelector('#next');
+var prev = document.querySelector('#prev');
+var number = document.querySelector('#number');
+var index = 0;
+
+next.onclick = function() {
+    chuyenTiep('next');
+}
+prev.onclick = function() {
+    chuyenTiep('prev');
+}
+
+function chuyenTiep(chon) {
+    if (chon == 'next') {
+        index++;
+        if (index == slideLength) {
+            index = 0;
+        }
+        number.innerHTML = index + 1;
+    } else {
+        index--;
+        if (index < 0) {
+            index = slideLength - 1;
+        }
+        number.innerHTML = index + 1;
+    }
+    for (var i = 0; i < slideLength; i++) {
+        slideItem[i].classList.remove('active');
+    }
+    slideItem[index].classList.add('active');
+}
+setInterval("chuyenTiep('next')", 4000)
+       </script>
+</body>
+
+</html>

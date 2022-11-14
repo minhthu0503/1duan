@@ -1,0 +1,37 @@
+/* modal layout */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.modal__overlay {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: var(--white-color);
+    margin: auto;
+    z-index: 2;
+    border-radius: 5px;
+}
+.modal__inner{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,83 @@
+.products_all{
+
+}
+
+.products_banner{
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.products_banner-img{
+    width: 100%;
+
+}
+
+.products_banner-content{
+    margin: 0 0 0 30px;
+}
+
+.products_banner-heading{
+    font-family: "Trirong",Arial,Helvetica,Arial,sans-serif;
+    font-size: 2.8rem;
+    line-height: 1.4em;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.products_banner-heading-p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.products_banner-heading-p.active{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.products_section{
+
+}
+
+.products_list-left{
+
+}
+
+.products_list-left-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products_list-left-link{
+    /* display: block; */
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 15px 0;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.products_list-left-i{
+    display: block;
+    font-style: normal;
+}
+
+.products_list-left-body{
+    display: none;
+
+}
+
+.products_list-left-list{
+}
+.products_list-left-link:hover .products_list-left-body{
+    display: block;
+}
+
+.products_list-left-item{
+
+}
+
+.products_list-left-item-link{
+
+}

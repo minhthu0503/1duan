@@ -1,0 +1,27 @@
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+    .sticky{
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header{
+        height: ;
+    }
+    .header_login-logout{
+        display: none;
+    }
+    .header_cart{
+        margin: 0 50px;
+    }
+    .header_logo{
+        display: nne;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .header_login-logout{
+        display: none;
+    }
+}

@@ -1,0 +1,171 @@
+.products_detail{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+}
+.header_product-title {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.header_product {
+    display: flex;
+    padding: 4px 0;
+    /* width: 30%; */
+}
+
+.title1,
+.header_product span {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.sticky_product_title {
+    top: calc(var(--header-navbar-wap) + var(--header-menu-list) + 10px);
+    position: sticky;
+    /* top: 0; */
+    right: 0%;
+    left: 0%;
+    z-index: 10;
+    background-color: var(--white-color);
+}
+
+.silder_img-products {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.slider_products-thumb {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider_products-list {
+    list-style: none;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.slider_products-list.active {
+    border: 1px solid var(--primary-color);
+}
+
+.slider_products-link {
+
+}
+
+.slider_products-img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox {
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    margin: 5px;
+    overflow: hidden;
+}
+
+.slider_products-main {
+    width: 100%;
+    height: 100%;
+}
+
+/* products_detail-info */
+
+.products_detail-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.products_detail-header{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}   
+
+.products_detail-heading{
+    font-family: "Trirong",arial,helvetica,clean,sans-serif;
+    font-size: 2.6rem;
+    line-height: 2.4em;
+    letter-spacing: -0.5pt;
+    font-weight: 400;
+}
+
+.products_detail-heading-category{
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.products_detail-heading-link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.products_detail-price{
+    font-size: 2.5rem;
+    line-height: 2.25em;
+    display: block;
+}
+
+.products_detail-title{
+    font-size: 1.5rem;
+    /* opacity: 0.8; */
+    font-weight: 100;
+    line-height: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.products_detail-form{
+    display: flex;
+    flex-direction: column;
+}
+.form_label-number label{
+    font-size: 1.2rem;
+}
+.products_detail-input{
+    width: 100px;
+    padding: 7px 5px 7px 20px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+.btn.products_detail-btn{
+    margin-top: 30px;
+}
+
+/* products_detail-content */
+.products_detail-content{
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+.products_detail-tab{
+
+}
+
+.products_detail-tab-item{
+
+}
+
+.products_detail-tab-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+

@@ -1,0 +1,52 @@
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    width: 100px;
+}
+
+.header_search{ 
+    margin-left: 20px;
+    flex: 1;
+}
+
+.header_form{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.header_form-input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+}
+
+.btn.header_form-btn{   
+    background-color: aqua;
+    border: none;
+}
+
+.header_right{
+    display: flex;
+}
+
+.header_login-logout{
+margin: 0 20px;
+}
+
+.header_login{
+
+}
+
+.header_logout{
+
+}
+
+.header_cart{
+
+}

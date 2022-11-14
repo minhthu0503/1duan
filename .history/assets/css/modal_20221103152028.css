@@ -1,0 +1,152 @@
+/* modal layout */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.modal__overlay {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    /* background-color: var(--white-color); */
+    margin: auto;
+    z-index: 2;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.modal__inner {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease-in-out;
+
+
+}
+
+.modal__inner.active {
+    background-color: #f3c06d;
+}
+
+.box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box h2 {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.box button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    border: none;
+}
+
+.fromBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--white-color);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.fromBx.active {
+    left: 50%;
+}
+
+.fromBx .form {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: .5s;
+}
+.fromBx.active .signinForm {
+    transition-delay: 0s;
+    left: -100%;
+}
+.fromBx .signinForm {
+    transition-delay: 0.25s;
+}
+.fromBx .signupForm {
+    left: 100%; 
+}
+.fromBx.active .signupForm {
+    left: 0; 
+}
+
+.fromBx .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fromBx .form form h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.fromBx .form form input,
+.fromBx .form form button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 1.6rem;
+    border: 1px solid var(--text-color);
+}
+
+.signinForm_btn {
+    background-color: var(--primary-color);
+    border: none !important;
+    color: var(--white-color);
+    max-width: 100px;
+    cursor: pointer;
+}
+.forgot{
+    color: var(--text-color);
+    font-size: 1.6rem;
+}

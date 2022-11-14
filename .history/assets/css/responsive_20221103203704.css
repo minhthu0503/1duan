@@ -1,0 +1,146 @@
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+    .sticky {
+        display: none;
+    }
+
+    .header {
+        height: 94px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+
+    .header_login-logout {
+        display: none;
+    }
+
+    .header_cart {
+        margin: 0 30px;
+    }
+
+    .header_logo {
+        display: none;
+    }
+
+    .link_none,
+    .logo_none {
+        display: none;
+    }
+
+    /* nav__mobile-search */
+
+    .nav-menu-search {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__mobile-search {
+        display: none;
+        margin: 0 5px;
+        padding: 10px;
+    }
+
+    .nav__mobile-search-img {
+        width: 25px;
+        margin: 0;
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+    }
+
+    #mobile__search:checked~.header__search {
+        display: flex;
+    }
+
+    /* nav_mobile */
+    .nav__mobile-btn {
+        height: 100%;
+        display: none;
+        margin: 0;
+        padding: 0 20px 0 12px;
+    }
+
+    .nav__mobile-img {
+        width: 25px;
+        margin: auto;
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+    }
+
+    .nav__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.3);
+        animation: fadeIn 0.2s linear;
+        display: none;
+    }
+
+    .nav__mobile {
+        z-index: 11;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 320px;
+        background-color: var(--white-color);
+        max-width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        opacity: 0;
+    }
+
+    .nav__mobile-list {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .nav__mobile-item {
+        list-style: none;
+    }
+
+    .nav__mobile-link {
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    .nav__mobile-close {
+        position: absolute;
+        width: 28px;
+        right: 10px;
+        top: 10px;
+    }
+
+    #nav__mobile-input:checked~.nav__overlay {
+        display: block;
+    }
+
+    #nav__mobile-input:checked~.nav__mobile {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .header_login-logout {
+        display: none;
+    }
+
+    .header_logo {
+        display: none;
+    }
+
+    .link_none,
+    .logo_none {
+        display: block;
+        width: 100px;
+        margin: 0 30px 0 10px;
+    }
+}
